@@ -71,6 +71,86 @@
     color: var(--white);
     transition: all ease .4s;
 }
+
+.navigation .navbar-mobile {
+    background-color: var(--green);
+    display: none;
+    
+    padding: 10px 20px;
+    margin-bottom: 1rem;
+}
+
+.navbar-mobile .mobile-logo a{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: var(--orange);
+    font-size: 2rem;
+}
+
+/* Style the menu items */
+.menu {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    color: var(--white);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu a:hover{
+    color: var(--green);
+    transition: all ease .4s;
+}
+
+.sub-menu{
+    list-style: none;
+    display: flex;
+}
+
+.sub-menu li{
+    margin-right: 20px;
+}
+
+.sub-menu a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.sub-menu a:hover{
+    color: var(--light-orange);
+    transition: all ease .4s;
+}
+/* Style the menu toggle button */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin: auto;
+    margin-right: 1rem;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--orange);
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+.bar:nth-child(2){
+    width: 20px;
+}
+
 /* Navigation end */
 
 /* Hero */
@@ -146,3 +226,101 @@
     transition: all ease .4s;
 }
 /* Hero end */
+
+@media screen and (max-width: 768px){
+    .navigation .navbar-desktop{
+        display: none;
+    }
+
+    .navigation .navbar-mobile{
+        display: flex;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        
+    }
+
+    .navbar-mobile .mobile-logo img{
+        height: 60px;
+        width: auto;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: var(--orange);
+        z-index: 1;
+    }
+
+    .menu.active {
+        display: flex;
+        
+        transition: all ease .4s;
+    }
+
+    .menu li {
+        margin: 10px 20px;
+    }
+
+    .menu-toggle {
+        display: flex;
+        margin-left: auto;
+    }
+
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+        background-color: var(--cream);
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .menu .sub-menu{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        border-top: 2px solid var(--green);
+    }
+
+    .hero{
+        height: 100vh;
+        background: var(--orange);
+    }
+
+    .hero .intro .text{
+        top: 32%;
+        margin-left: 1rem;
+        width: 80%;
+        font-size: 1.3rem;
+    }
+
+    .hero .intro .action{
+        margin-left: 2rem;
+    }
+
+    .hero .intro .action a{
+        font-size: 1.5rem;
+        padding: 12px 14px;
+    }
+
+    .hero .photo{
+        position: absolute;
+        width: 40%;
+        height: 35%;
+        left: 57.5%;
+        bottom: 0;
+        z-index: 2;
+        border: var(--cream) 1rem solid;
+        overflow: hidden;
+    }
+}
