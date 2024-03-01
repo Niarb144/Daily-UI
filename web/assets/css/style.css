@@ -1,0 +1,148 @@
+/* LORA SERIF */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+/* POPPINS SANS SERIF */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    /* colours */
+    --green: #004225;
+    --white: #F5F5DC;
+    --orange: #FFB000;
+    --cream: #FFCF9D;
+    --light-orange: #e6ae37;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Navigation */
+.navigation{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    z-index: 100;
+}
+
+.navigation nav{
+    display: flex;
+    width: 100%;
+}
+
+.navigation nav .logo{
+    margin-left: 4rem;
+    padding-top: 3rem;
+}
+
+.navigation nav .logo a{
+    text-decoration: none;
+}
+
+.navigation nav .logo p{
+    font-family: 'Poppins', sanserif;
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--orange);
+}
+
+.navigation nav .links{
+    display: flex;
+    margin: auto;
+    margin-right: 4rem;   
+    padding-top: 3rem;
+}
+
+.navigation nav .links ul{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+
+.navigation nav .links ul li a{
+    text-decoration: none;
+    color: var(--green);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.navigation nav .links ul li a:hover{
+    color: var(--white);
+    transition: all ease .4s;
+}
+/* Navigation end */
+
+/* Hero */
+.hero{
+    height: 80vh;
+    background: var(--orange);
+}
+
+.hero .intro{
+    position: absolute;
+    top: 0;
+    height: 90vh;
+    width: 70%;
+    background-color: var(--green);
+    z-index: 1;
+}
+
+.hero .intro .text{
+    position: absolute;
+    top: 40%;
+    margin-left: 2rem;
+    width: 80%;
+    color: var(--orange);
+    font-family: 'Lora', serif;
+    font-size: 2.7rem;
+}
+
+.hero .intro .text h1{
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.hero .intro .action{
+    position: absolute;
+    bottom: 0;
+    margin-left: 3rem;
+    margin-bottom: 4rem;
+}
+
+.hero .intro .action a{
+    text-decoration: none;
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    background: var(--light-orange);
+    padding: 12px 14px;
+    border-radius: 5px;
+}
+
+.hero .intro .action a:hover{
+    background-color: var(--orange);
+    transition: ease all .5s
+}
+
+.hero .photo{
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    left: 57.5%;
+    bottom: 0;
+    z-index: 2;
+    border: var(--cream) 1rem solid;
+    overflow: hidden;
+}
+
+.hero .photo img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero .photo img:hover{
+    transform: scale(1.1);
+    transition: all ease .4s;
+}
+/* Hero end */
