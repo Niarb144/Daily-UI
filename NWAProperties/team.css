@@ -1,0 +1,1109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --main-color: #700f70;
+    --second-color: #192f6a;
+    --text-color: #314862;
+    --bg-color: #fff;
+
+    --box-shadow: 2px 2px 18px rgb(14 52 54 / 15%);
+    --platinum: #e5e5e5;
+    --black: #2b2d42;
+    --white: #fff;
+    --thumb: #edf2f4;
+}
+
+.ctn{
+    margin: auto;
+    padding: 8px 15px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    border: 2px;
+    border-radius: 2rem;
+    text-decoration: none;
+}
+
+.ctn a{
+    color: var(--bg-color);
+}
+
+.ctn:hover{
+    background: var(--bg-color);
+    color: var(--text-color);
+    transition: ease .6s;
+}
+
+/*Navbar*/
+.navbar-nav{
+    margin-left: auto;
+}
+
+.navbar-nav a{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar .navbar-brand{
+    width: 120px;
+    height: 80px;
+}
+
+.navbar .navbar-brand img{
+    width: 120px;
+    height: 80px;
+}
+
+.navbar .navbar-nav .active > .nav-link, .navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link.show, .navbar .navbar-nav.show > .nav-link{
+    color: var(--main-color);
+    
+}
+
+.navbar .navbar-nav .nav-link{
+    color: var(--main-color);
+}
+
+.navbar-nav{
+    text-align: center;
+}
+
+.nav-link{
+    padding: .2rem 1rem;
+}
+
+.team-video{
+    margin-top: 8rem;
+}
+
+.team-video video{
+    height: 100vh;
+    margin: auto;
+    width: 100%;
+}
+
+.team-details{
+    margin-top: 2rem;
+    width: 100%;
+    align-items: center;
+}
+
+.team-details .description h3{
+    margin-left: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.team-details .description p{
+    margin-left: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.team-container{
+    margin-top: 2rem;
+    margin-left: 250px;
+    width: 1068px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.row{
+    margin-left: 450px;
+}
+
+.our-team{
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px 15px 30px;
+    background: var(--main-color);
+
+}
+
+.our-team:hover{
+    transform: translateY(-10px);
+    transition: ease-in-out .4s;
+}
+.our-team .pic{
+    padding: 10px;
+    margin-bottom: 25px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease 0s;
+}
+
+.pic img{
+    width: 200px;
+    height: 240px;
+    
+}
+
+.our-team .title{
+    font-weight: 600;
+    color: var(--bg-color);
+    text-transform: uppercase;
+    display: block;
+    font-size: 20px;
+    margin: 0 0 7px 0;
+}
+
+
+.our-team .post{
+    color: var(--platinum);
+    text-transform: capitalize;
+    display: block;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  
+.container h2 {
+    font-size: 32px;
+    margin-bottom: 1em;
+  }
+  
+.cards {
+    display: grid;
+    grid-auto-columns: 100%;
+    grid-column-gap: 10px;
+    grid-auto-flow: column;
+    padding: 25px 0px;
+    list-style: none;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+
+  .card11 {
+    background-image: url(./img/irenekaranja.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+    color: var(--bg-color);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    scroll-snap-align: start;
+    transition: all 0.2s;
+  }
+  
+.card11:hover {
+    color: var(--black);
+    background: var(--main-color);
+    transform: translateY(-20px);
+  }
+
+.card11 p:hover{
+    color: var(--black);
+}
+  
+.card11 .card-title {
+    display: flex;
+    font-size: 18px;
+    width: 85%;
+  }
+  
+.card11 .card-content {
+    margin: 20px 0;
+    max-width: 85%;
+  }
+
+.card11 .card-content p{
+    margin: 20px 0;
+    max-width: 85%;
+    color: var(--bg-color);
+    
+    
+    flex-wrap: wrap;
+    
+    font-size: 14px;
+    
+  }
+  
+.card11 .card-link-wrapper {
+    margin-top: auto;
+  }
+  
+.card11 .card-link {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: var(--second-color);
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background 0.2s;
+  }
+  
+.card11:hover .card-link {
+    background: var(--main-color);
+  }
+
+  .card10 {
+    background-image: url(./img/ahmedfarell.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+    color: var(--bg-color);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    scroll-snap-align: start;
+    transition: all 0.2s;
+  }
+  
+.card10:hover {
+    color: var(--black);
+    background: var(--main-color);
+    transform: translateY(-20px);
+  }
+
+.card10 p:hover{
+    color: var(--black);
+}
+  
+.card10 .card-title {
+    display: flex;
+    font-size: 18px;
+    width: 85%;
+  }
+  
+.card10 .card-content {
+    margin: 20px 0;
+    max-width: 85%;
+  }
+
+.card10 .card-content p{
+    margin: 20px 0;
+    max-width: 85%;
+    color: var(--bg-color);
+    
+    
+    flex-wrap: wrap;
+    
+    font-size: 14px;
+    
+  }
+  
+.card10 .card-link-wrapper {
+    margin-top: auto;
+  }
+  
+.card10 .card-link {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: var(--second-color);
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background 0.2s;
+  }
+  
+.card10:hover .card-link {
+    background: var(--main-color);
+  }
+
+  .card9 {
+    background-image: url(./img/silviawakaba.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+    color: var(--bg-color);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    scroll-snap-align: start;
+    transition: all 0.2s;
+  }
+  
+.card9:hover {
+    color: var(--black);
+    background: var(--main-color);
+    transform: translateY(-20px);
+  }
+
+.card9 p:hover{
+    color: var(--black);
+}
+  
+.card9 .card-title {
+    display: flex;
+    font-size: 18px;
+    width: 85%;
+  }
+  
+.card9 .card-content {
+    margin: 20px 0;
+    max-width: 85%;
+  }
+
+.card9 .card-content p{
+    margin: 20px 0;
+    max-width: 85%;
+    color: var(--bg-color);
+    
+    
+    flex-wrap: wrap;
+    
+    font-size: 14px;
+    
+  }
+  
+.card9 .card-link-wrapper {
+    margin-top: auto;
+  }
+  
+.card9 .card-link {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: var(--second-color);
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background 0.2s;
+  }
+  
+.card9:hover .card-link {
+    background: var(--main-color);
+  }
+  
+.card {
+    background-image: url(./img/margaretwanyoike.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+    color: var(--bg-color);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    scroll-snap-align: start;
+    transition: all 0.2s;
+  }
+  
+.card:hover {
+    color: var(--black);
+    background: var(--main-color);
+    transform: translateY(-20px);
+  }
+
+.card p:hover{
+    color: var(--black);
+}
+  
+.card .card-title {
+    display: flex;
+    font-size: 18px;
+    width: 85%;
+  }
+  
+.card .card-content {
+    margin: 20px 0;
+    max-width: 85%;
+  }
+
+.card .card-content p{
+    margin: 20px 0;
+    max-width: 85%;
+    color: var(--bg-color);
+    
+    
+    flex-wrap: wrap;
+    
+    font-size: 14px;
+    
+  }
+  
+.card .card-link-wrapper {
+    margin-top: auto;
+  }
+  
+.card .card-link {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: var(--second-color);
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background 0.2s;
+  }
+  
+.card:hover .card-link {
+    background: var(--main-color);
+  }
+
+  .card2 {
+    background-image: url(./img/ebinmureithi.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+    color: var(--bg-color);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    scroll-snap-align: start;
+    transition: all 0.2s;
+  }
+  
+.card2:hover {
+    color: var(--black);
+    background: var(--main-color);
+    transform: translateY(-20px);
+  }
+
+.card2 p:hover{
+    color: var(--black);
+}
+  
+.card2 .card-title {
+    display: flex;
+    font-size: 18px;
+    width: 85%;
+  }
+  
+.card2 .card-content {
+    margin: 20px 0;
+    max-width: 85%;
+  }
+
+.card2 .card-content p{
+    margin: 20px 0;
+    max-width: 85%;
+    color: var(--bg-color);
+    
+    
+    flex-wrap: wrap;
+    
+    font-size: 14px;
+    
+  }
+  
+.card2 .card-link-wrapper {
+    margin-top: auto;
+  }
+  
+.card2 .card-link {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: var(--second-color);
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background 0.2s;
+  }
+  
+.card2:hover .card-link {
+    background: var(--main-color);
+  }
+
+  .card3 {
+    background-image: url(./img/terrywambui.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+    color: var(--bg-color);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    scroll-snap-align: start;
+    transition: all 0.2s;
+  }
+  
+.card3:hover {
+    color: var(--black);
+    background: var(--main-color);
+    transform: translateY(-20px);
+  }
+
+.card3 p:hover{
+    color: var(--black);
+}
+  
+.card3 .card-title {
+    display: flex;
+    font-size: 18px;
+    width: 85%;
+  }
+  
+.card3 .card-content {
+    margin: 20px 0;
+    max-width: 85%;
+  }
+
+.card3 .card-content p{
+    margin: 20px 0;
+    max-width: 85%;
+    color: var(--bg-color);
+    
+    
+    flex-wrap: wrap;
+    
+    font-size: 14px;
+    
+  }
+  
+.card3 .card-link-wrapper {
+    margin-top: auto;
+  }
+  
+.card3 .card-link {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: var(--second-color);
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background 0.2s;
+  }
+  
+.card3:hover .card-link {
+    background: var(--main-color);
+  }
+
+  .card4 {
+    background-image: url(./img/jaynekendi.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+    color: var(--bg-color);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    scroll-snap-align: start;
+    transition: all 0.2s;
+  }
+  
+.card4:hover {
+    color: var(--black);
+    background: var(--main-color);
+    transform: translateY(-20px);
+  }
+
+.card4 p:hover{
+    color: var(--black);
+}
+  
+.card4 .card-title {
+    display: flex;
+    font-size: 18px;
+    width: 85%;
+  }
+  
+.card4 .card-content {
+    margin: 20px 0;
+    max-width: 85%;
+  }
+
+.card4 .card-content p{
+    margin: 20px 0;
+    max-width: 85%;
+    color: var(--bg-color);
+    
+    
+    flex-wrap: wrap;
+    
+    font-size: 14px;
+    
+  }
+  
+.card4 .card-link-wrapper {
+    margin-top: auto;
+  }
+  
+.card4 .card-link {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: var(--second-color);
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background 0.2s;
+  }
+  
+.card4:hover .card-link {
+    background: var(--main-color);
+  }
+
+  .card5 {
+    background-image: url(./img/nicholasndungu.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+    color: var(--bg-color);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    scroll-snap-align: start;
+    transition: all 0.2s;
+  }
+  
+.card5:hover {
+    color: var(--black);
+    background: var(--main-color);
+    transform: translateY(-20px);
+  }
+
+.card5 p:hover{
+    color: var(--black);
+}
+  
+.card5 .card-title {
+    display: flex;
+    font-size: 18px;
+    width: 85%;
+  }
+  
+.card5 .card-content {
+    margin: 20px 0;
+    max-width: 85%;
+  }
+
+.card5 .card-content p{
+    margin: 20px 0;
+    max-width: 85%;
+    color: var(--bg-color);
+    
+    
+    flex-wrap: wrap;
+    
+    font-size: 14px;
+    
+  }
+  
+.card5 .card-link-wrapper {
+    margin-top: auto;
+  }
+  
+.card5 .card-link {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: var(--second-color);
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background 0.2s;
+  }
+  
+.card5:hover .card-link {
+    background: var(--main-color);
+  }
+
+  .card6 {
+    background-image: url(./img/estheryvonne.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+    color: var(--bg-color);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    scroll-snap-align: start;
+    transition: all 0.2s;
+  }
+  
+.card6:hover {
+    color: var(--black);
+    background: var(--main-color);
+    transform: translateY(-20px);
+  }
+
+.card6 p:hover{
+    color: var(--black);
+}
+  
+.card6 .card-title {
+    display: flex;
+    font-size: 18px;
+    width: 85%;
+  }
+  
+.card6 .card-content {
+    margin: 20px 0;
+    max-width: 85%;
+  }
+
+.card6 .card-content p{
+    margin: 20px 0;
+    max-width: 85%;
+    color: var(--bg-color);
+    
+    
+    flex-wrap: wrap;
+    
+    font-size: 14px;
+    
+  }
+  
+.card6 .card-link-wrapper {
+    margin-top: auto;
+  }
+  
+.card6 .card-link {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: var(--second-color);
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background 0.2s;
+  }
+  
+.card6:hover .card-link {
+    background: var(--main-color);
+  }
+
+  .card7 {
+    background-image: url(./img/paulmandu.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+    color: var(--bg-color);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    scroll-snap-align: start;
+    transition: all 0.2s;
+  }
+  
+.card7:hover {
+    color: var(--black);
+    background: var(--main-color);
+    transform: translateY(-20px);
+  }
+
+.card7 p:hover{
+    color: var(--black);
+}
+  
+.card7 .card-title {
+    display: flex;
+    font-size: 18px;
+    width: 85%;
+  }
+  
+.card7 .card-content {
+    margin: 20px 0;
+    max-width: 85%;
+  }
+
+.card7 .card-content p{
+    margin: 20px 0;
+    max-width: 85%;
+    color: var(--bg-color);
+    
+    
+    flex-wrap: wrap;
+    
+    font-size: 14px;
+    
+  }
+  
+.card7 .card-link-wrapper {
+    margin-top: auto;
+  }
+  
+.card7 .card-link {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: var(--second-color);
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background 0.2s;
+  }
+  
+.card7:hover .card-link {
+    background: var(--main-color);
+  }
+
+  .card8 {
+    background-image: url(./img/ithielmutugi.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+    color: var(--bg-color);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    scroll-snap-align: start;
+    transition: all 0.2s;
+  }
+  
+.card8:hover {
+    color: var(--black);
+    background: var(--main-color);
+    transform: translateY(-20px);
+  }
+
+.card8 p:hover{
+    color: var(--black);
+}
+  
+.card8 .card-title {
+    display: flex;
+    font-size: 18px;
+    width: 85%;
+  }
+  
+.card8 .card-content {
+    margin: 20px 0;
+    max-width: 85%;
+  }
+
+.card8 .card-content p{
+    margin: 20px 0;
+    max-width: 85%;
+    color: var(--bg-color);
+    font-weight: 400;
+    
+    flex-wrap: wrap;
+    
+    font-size: 14px;
+    
+  }
+
+  
+.card8 .card-link-wrapper {
+    margin-top: auto;
+  }
+  
+.card8 .card-link {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: var(--second-color);
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background 0.2s;
+  }
+  
+.card8:hover .card-link {
+    background: var(--main-color);
+  }
+
+  
+
+  
+.cards::-webkit-scrollbar {
+    height: 12px;
+  }
+  
+.cards::-webkit-scrollbar-thumb,
+.cards::-webkit-scrollbar-track {
+    border-radius: 92px;
+  }
+  
+.cards::-webkit-scrollbar-thumb {
+    background: var(--black);
+  }
+  
+.cards::-webkit-scrollbar-track {
+    background: var(--thumb);
+  }
+  
+
+
+.about{
+    margin-top: 4rem;
+    margin-left: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, auto));
+    gap: 2rem;
+}
+
+.about-img img{
+  width: 380px;
+  height: 300px;
+    border-radius: 3rem 0 3rem 3rem;
+}
+
+.about-text span{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--main-color);
+}
+
+.about-text h2{
+    font-size: 1.7rem;
+}
+
+.about-text p{
+    font-size: 0.938rem;
+    margin: 1rem 0 1rem;
+}
+
+/*footer*/
+.footer{
+    
+    width: 100%;
+    height: 300px;
+    padding: 20px 80px;
+    margin: 0;  
+    background: var(--main-color);
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 2rem;
+  }
+  
+  .footer-container h2{
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+  
+  .footer-box{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-box h3{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  
+  .footer-box a{
+    font-size: 0.8rem;
+    color: #fcfafa;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+  }
+  
+  .footer-box a:hover{
+    color: #7995f0;
+  }
+  
+  .social a{
+    font-size: 20px;
+    margin-right: 1rem;
+  }
+  
+  .social a:hover{
+    color: #7995f0;
+  }
+
+  @media only screen and (max-width:800px){
+    .navbar-brand{
+        width: 80px;
+        height: 50px;
+    }
+    .navbar-brand img{
+        width: 60px;
+        height: 30px;
+    }
+    .navbar-nav.ml-auto{
+        background: rgba(255, 255, 255, 0.904);
+        height: 200px;
+        border-radius: 0 2rem 0 2rem;
+    }
+    .navbar-toggler{
+        padding: 1px 5px;
+        font-size: 18px;
+        line-height: 0.3;
+        background: #fff;
+    }
+
+
+    .team-video video{
+        margin-top: 0;
+        height: 40vh;
+    }
+
+    .team-details{
+        margin-top: 0;
+    }
+
+        .team-container{
+            width: 90%;
+            margin: auto;
+        }
+        .our-team{
+            width: 80%;
+            margin: auto;
+            margin-top: 2rem;
+        }
+
+    /*footer*/
+    .footer{
+        padding: 10px;
+        width: 100%;
+        flex-direction: column;
+        height: 650px;
+    }
+
+    .footer .footer-container{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
+  @media (min-width: 500px) {
+    .cards {
+      grid-auto-columns: calc(50% - 10px);
+      grid-column-gap: 20px;
+    }
+  }
+  
+@media (min-width: 700px) {
+    .cards {
+      grid-auto-columns: calc(calc(100% / 3) - 20px);
+      grid-column-gap: 30px;
+    }
+  }
+  
+@media (min-width: 1100px) {
+    .cards {
+      grid-auto-columns: calc(25% - 30px);
+      grid-column-gap: 40px;
+    }
+  }
