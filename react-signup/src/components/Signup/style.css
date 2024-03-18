@@ -1,0 +1,45 @@
+.container{
+    font-family: 'Poppins',sans-serif;
+    width: 40%;
+    background-color: aquamarine;
+    height: 70vh;
+    position: absolute;
+    right: 3rem;
+    bottom: 2rem;
+}
+
+.header{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.inputs{
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.names input[type=text]{
+    padding: 10px 8px;
+    margin-left: 2px;
+}
+
+.gender{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.bike_category{
+    margin-top: 1rem;
+}
+
+.terms{
+    margin-top: 1rem;
+}
+
+.terms a{
+    text-decoration: none;
+    color: green;
+}
