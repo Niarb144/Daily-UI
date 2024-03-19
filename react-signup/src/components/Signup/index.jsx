@@ -1,9 +1,6 @@
 import React from 'react'
 import './style.css'
 
-import bike_image from '../assets/pic1.jpg'
-import bike_jump from '../assets/pic2.jpg'
-
 function signup() {
   return (
     <div className='container'>
@@ -14,8 +11,9 @@ function signup() {
 
         <div className="inputs">
           <div className="names">
-          <input type="text" placeholder='Firstname' required/>
+            <input type="text" placeholder='Firstname' required/>
             <input type="text" placeholder='Lastname' required/>
+            <input type='email' placeholder='Email' required/>
           </div>
 
           <div className="gender">
@@ -32,7 +30,7 @@ function signup() {
 
           <div className="bike_category">
             <label htmlFor="category">Bike Category</label>
-            <select name="category" id="">
+            <select name="category" id="category">
               <option value="Default">Default</option>
               <option value="Cross Country">Cross Country</option>
               <option value="Trail">Trail</option>
@@ -47,7 +45,7 @@ function signup() {
             
         </div>
 
-        <button type='submit'>Signup</button>
+        <input type="submit" value="Join" className='btn'/>
     </div>
   )
 }
