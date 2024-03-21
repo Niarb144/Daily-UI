@@ -23,9 +23,9 @@
 
 .payment_form{
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
     left: 20%;
-    height: 70vh;
+    height: 90vh;
     width: 60%;
     margin: auto;
     background: rgb(18,8,182);
@@ -105,4 +105,100 @@
     color: #000;
     font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
+}
+
+.shipping .region{
+    display: flex;
+     gap: 1rem;
+     margin-top: 1rem;
+     font-family: 'Poppins', sans-serif;
+     font-size: 1.2rem;
+     color: #000;
+}
+
+
+.shipping .region select{
+    font-family: 'Poppins', sans-serif;
+    padding: 8px;
+    width: 40%;
+    background: rgb(255, 255, 255, 0.6);
+    border: none;
+    border-bottom: #fff;
+}
+
+.shipping .region select option{
+    color: #000;
+    font-family: 'Poppins' , sans-serif;
+    font-size: 1.2rem;
+}
+
+.card_info{
+    margin-top: 2rem;
+    margin-left: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card_info .card_number{
+    grid-column: span 2;
+    gap: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.card_info .card_number img{
+    width: 50px;
+    height: auto;
+    background: #fff;
+}
+
+.card_info .card_number input[type=number]{
+    width: 50%;
+    padding: 8px;
+    background: rgb(255, 255, 255, 0.6);
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #000;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card_info .expiry_date{
+    margin-top: 1rem;
+}
+
+.card_info .expiry_date input[type=text]{
+    width: 40%;
+    padding: 8px;
+    background: rgb(255, 255, 255, 0.6);
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #000;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card_info .security_code{
+    margin-top: 1rem;
+}
+
+.card_info .security_code input[type=number]{
+    width: 40%;
+    padding: 8px;
+    background: rgb(255, 255, 255, 0.6);
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #000;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.payment_form .btn{
+    margin-left: 4rem;
+    margin-top: 2rem;
+    padding: 8px;
+    width: 30%;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
 }

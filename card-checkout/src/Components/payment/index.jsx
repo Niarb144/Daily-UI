@@ -1,6 +1,8 @@
 import React from 'react'
 import './style.css'
 import Background from '../assets/background.mp4'
+import visa from '../assets/visa.png'
+import mastercard from '../assets/mastercard.webp'
 
 function payment() {
   return (
@@ -48,13 +50,26 @@ function payment() {
             </div>
 
             <div className="card_info">
-                <label htmlFor="Card number">Card Number</label>
-                <input type="number" name="Card number" id="card_number" placeholder='Card Number'/>
-                <label htmlFor="Expiry_date">Expiry</label>
-                <input type="text" name="Expiry_date" id="expiry_date" placeholder='MM/YY'/>
-                <label htmlFor="Security_code">CVS</label>
-                <input type="number" name='Security_code' id='security_code' placeholder='000'/>
+                <div className="card_number">
+                    <label htmlFor="Card number">Card Number</label>
+                    <input type="number" name="Card number" id="card_number" placeholder='Card Number'/>
+
+                    <img src={visa} alt="visa" />
+                    <img src={mastercard} alt='mastercard' />
+                </div>
+                
+                <div className="expiry_date">
+                    <label htmlFor="Expiry_date">Expiry</label>
+                    <input type="text" name="Expiry_date" id="expiry_date" placeholder='MM/YY'/>
+                </div>
+                
+                <div className="security_code">
+                    <label htmlFor="Security_code">CVS</label>
+                    <input type="number" name='Security_code' id='security_code' placeholder='000'/>
+                </div>
+                
             </div>
+
             <input type="button" value="Place Order" className='btn'/>
         </div>
         
