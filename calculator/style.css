@@ -1,0 +1,129 @@
+button{
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 50%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+button:hover{
+    background-color: aliceblue;
+    border: 1px solid;
+    transition: all ease .4s;
+    cursor: pointer;
+}
+
+.calculator{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    background: rgb(216, 209, 209);
+    padding: 8px;
+    margin: auto;
+}
+
+.calculator .display{
+    width: 80%;
+    background: #fff;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 8px;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+.calculator .keys{
+    /* background: rebeccapurple; */
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.calculator .keys .operator{
+    /* background-color: antiquewhite; */
+    grid-column: span 2;  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;  
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+
+.calculator .keys .operator button{
+    background-color: aqua;
+}
+
+.calculator .keys .numbers{
+    /* background-color: beige; */
+    grid-column: span 3;
+    grid-row: span 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 80%;
+    padding: 8px;
+    margin: auto;
+}
+
+.calculator .keys .misc{
+    /* background-color: aquamarine; */
+    grid-column: span 3;
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    width: 80%;
+    margin: auto;
+}
+
+.calculator .keys .misc .zero{
+    width: 62%;
+    border-radius: 1rem;
+}
+
+.calculator .keys .actions{
+    /* background-color: aliceblue; */
+    grid-area: 2/4/4/5;
+    display: flex;
+    /* gap: rem; */
+    flex-direction: column;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    margin-left: 1rem;
+}
+
+.calculator .keys .actions button{
+    width: 100%;
+    height: 80px;
+    border-radius: 1rem;
+    margin-top: 3rem;
+}
+
+.calculator .keys .actions .key_equal{
+    background-color: orange;
+}
+
+.calculator .keys .actions .key_equal:hover{
+    background-color: rgb(255, 94, 0);
+    transition: all ease .4s;
+}
+
+@media screen and (max-width: 768px){
+    button{
+        width: 30px;
+        height: 30px;
+    }
+
+    .calculator .keys{
+        /* background: rebeccapurple; */
+        width: 100%;
+    }
+}
