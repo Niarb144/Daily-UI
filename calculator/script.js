@@ -26,7 +26,11 @@ keys.addEventListener('click', e => {
         action === 'divide'
        ){
         key.classList.add('is-depressed');
+
         calculator.dataset.previousKeyType = 'operator';
+
+        calculator.dataset.firstValue = displayedNum;
+        calculator.dataset.operator = action;
        }
 
        Array.from(key.parentNode.children)
@@ -41,7 +45,30 @@ keys.addEventListener('click', e => {
        }
 
        if (action === 'calculate'){
-        console.log('equal key');
+        const firstValue = calculator.dataset.firstValue;
+        const operator = calculator.dataset.operator;
+        const secondValue = displayedNum;
+
+        display.textContent = calculate(firstValue, operator, secondValue);
+       }
+
+       const calculate = (n1, operator, n2) => {
+        let result = '';
+
+        if (operator === 'add'){
+            result = parseFloat(n1) + parseFloat(n2);
+        }
+
+        if (operator === 'subtract'){
+            result = parseFloat(n1) - parseFloat(n2);
+        }
+        if (operator === 'multiply'){
+            result = parseFloat(n1) * parseFloat(n2);
+        }
+        if (operator === 'divide'){
+            result = parseFloat(n1) / parseFloat(n2);
+        }
+        return result
        }
     }
 })
