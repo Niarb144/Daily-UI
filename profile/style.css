@@ -96,7 +96,7 @@ nav .links ul{
 
 .profile .user-details , .achievements p{
     /* margin-top: 6rem; */
-    margin-left: 2rem;
+    margin-left: 3rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     line-height: 3rem;
@@ -116,9 +116,22 @@ nav .links ul{
     border-radius: 5px;
 }
 
-/* .profile .achievements p{
+.profile .achievements .distance{
+    display: flex;
     margin-left: 2rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    line-height: 3rem;
-} */
+}
+
+.profile .achievements .distance img{
+    width: 8rem;
+    height: auto;
+}
+
+.profile .achievements .avg-speed{
+    display: flex;
+    margin-left: 2rem;
+}
+
+.profile .achievements .avg-speed img{
+    width: 8rem;
+    height: auto;
+}
