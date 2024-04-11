@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero{
+    background: #fff3ff;
+    height: 50vh;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+}
+
+nav{
+    display: flex;
+    color: #fff3ff;
+}
+
+nav .logo{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav .links{
+    display: flex;
+    position: absolute;
+    right: 1rem;
+    margin: auto;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+nav .links ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero .hero-image{
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.hero .hero-image img{
+    height: auto;
+    width: 100%;
+}
+
+/* Profile Picture */
+.profile-pic{
+    background-color: #fff3ff;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    margin-left: 2rem;
+    overflow: hidden;
+}
+
+.profile-pic img{
+    width: 100%;
+    height: auto;
+}
+
+/* Profile Details */
+.profile{
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+}
+
+.profile .user-details{
+    /* background-color: aliceblue; */
+    margin-top: 6rem;
+    border-right: #31cfe4 2px solid;
+}
+
+.profile .achievements{
+    /* background-color: antiquewhite; */
+    margin-top: 6rem;
+}
+
+.profile .user-details , .achievements p{
+    /* margin-top: 6rem; */
+    margin-left: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 3rem;
+}
+
+.profile .user-details , .achievements span{
+    font-weight: 500;
+}
+
+.profile .user-details a{
+    margin-left: 2rem;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: #31cfe4;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* .profile .achievements p{
+    margin-left: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 3rem;
+} */
